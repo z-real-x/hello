@@ -7,6 +7,7 @@ jobs:
       - checkout # check out the code in the project directory
       - run: |
           python --version
-          sudo apt-get install pipenv
+          sudo apt-get install python3-pip
+          pip install pipenv
           pipenv --three
           pipenv run python --version
